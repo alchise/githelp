@@ -1,0 +1,39 @@
+Manejo de Git
+
+Comandos Básicos:
+
+ls 	: listar archivos en una carpeta
+ls -l 	: listar archivos con propiedades y usuarios
+ls -la 	: listar archivos ocultos con propiedades y usuarios
+cd 	: entrar en una carpeta
+cd .. 	: regresar a la anterior carpeta
+pwd 	: conocer la ruta en donde se está
+mkdir "nombrecarpeta" 	: crear una carpeta
+
+CONFIGURAR  GIT:
+
+// configurar nombre
+git config --global user.name "alchise"
+
+// configurar correo
+git config --global user.email "alchise@gmail.com"
+
+// iniciar Git en una carpeta
+git init
+
+// configurar rama principal global a main
+git config --global init.defaultBranch main
+
+// cambiar el nombre de la rama master inicial a main
+git branch -m main
+
+EMPEZAR CON GIT:
+
+// ver el estado de git en la carpeta
+git status
+
+// añadir archivos a seguimientos
+git add .
+
+// realizar un commit
+git commit -m "initial load"
