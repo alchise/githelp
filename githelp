@@ -56,4 +56,8 @@ touch .gitignore
 # ver modificaciones en archivos
 git diff
 
-// temporal
+# saltar entre commits por su ID
+git checkout 6c56141 # HEAD esta ahora en el commit de ID 6c56141
+
+# borrar todos los commits por encima de un ID especifico
+git reset --hard <ID>
