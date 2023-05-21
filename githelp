@@ -1,11 +1,11 @@
-Manejo de Git
+MANEJO DE GIT:
 
-Comandos Básicos:
+COMANDOS BASICOS:
 
-ls 	: listar archivos en una carpeta
+ls 	    : listar archivos en una carpeta
 ls -l 	: listar archivos con propiedades y usuarios
 ls -la 	: listar archivos ocultos con propiedades y usuarios
-cd 	: entrar en una carpeta
+cd 	    : entrar en una carpeta
 cd .. 	: regresar a la anterior carpeta
 pwd 	: conocer la ruta en donde se está
 mkdir "nombrecarpeta" 	: crear una carpeta
@@ -36,4 +36,9 @@ git status
 git add .
 
 // realizar un commit
-git commit -m "initial load"
+git commit -m "primer commit"
+
+// verificar los commits
+git log
+
+// modificacion temporal
