@@ -52,3 +52,8 @@ touch .gitignore
 
 # dentro del archivo
 **/<nombre>
+
+# ver modificaciones en archivos
+git diff
+
+// temporal
