@@ -60,4 +60,12 @@ git diff
 git checkout 6c56141 # HEAD esta ahora en el commit de ID 6c56141
 
 # borrar todos los commits por encima de un ID especifico
+# funciona adelante y atras
 git reset --hard <ID>
+
+# ver todo el historial de commits
+git reflog
+
+# asignar nombres a los commits
+git tag <nombre>
+
