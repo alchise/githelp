@@ -69,3 +69,6 @@ git reflog
 # asignar nombres a los commits
 git tag <nombre>
 
+# ver los tags de los commits
+git tag
+
