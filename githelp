@@ -12,33 +12,43 @@ mkdir "nombrecarpeta" 	: crear una carpeta
 
 CONFIGURAR  GIT:
 
-// configurar nombre
+# configurar nombre
 git config --global user.name "alchise"
 
-// configurar correo
+# configurar correo
 git config --global user.email "alchise@gmail.com"
 
-// iniciar Git en una carpeta
+# iniciar Git en una carpeta
 git init
 
-// configurar rama principal global a main
+# configurar rama principal global a main
 git config --global init.defaultBranch main
 
-// cambiar el nombre de la rama master inicial a main
+# cambiar el nombre de la rama master inicial a main
 git branch -m main
 
 EMPEZAR CON GIT:
 
-// ver el estado de git en la carpeta
+# ver el estado de git en la carpeta
 git status
 
-// añadir archivos a seguimientos
+# añadir archivos a seguimientos
 git add .
 
-// realizar un commit
+# realizar un commit
 git commit -m "primer commit"
 
-// verificar los commits
+# verificar los commits
 git log
+git log --graph
+git log --graph --pretty=oneline
+git log --graph --decorate --all --oneline
 
-// modificacion temporal
+# crear un alias de una linea comandos de git
+git config --global alias.logtree "log --graph --decorate --all --oneline"
+
+# creamos un archivo para ignorar otros archivos en los commits
+touch .gitignore
+
+# dentro del archivo
+**/<nombre>
