@@ -72,3 +72,6 @@ git tag <nombre>
 # ver los tags de los commits
 git tag
 
+# trabajo con ramas 'branch'
+# crear ramas
+git branch <nombre>
