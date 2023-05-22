@@ -94,3 +94,9 @@ git stash drop
 
 # verificar conflictos entre ramas
 git diff <rama>
+
+# eliminar una rama que ya se ha ido a produccion
+gif branch -d <rama>
+
+# forzar eliminacion de una rama
+gif branch -D <rama>
