@@ -49,9 +49,9 @@ git config --global alias.logtree "log --graph --decorate --all --oneline"
 
 # creamos un archivo para ignorar otros archivos en los commits
 touch .gitignore
-
+q
 # dentro del archivo
-**/<nombre>
+**/<archivo>
 
 # ver modificaciones en archivos
 git diff
@@ -74,11 +74,23 @@ git tag
 
 # trabajo con ramas 'branch'
 # crear ramas
-git branch <nombre>
+git branch <rama>
 
 # cambiar de rama
-git switch <nombre> # local?
-git checkout <nombre> # remoto?
+git switch <rama> # local? 
+git checkout <rama> # remoto? descarga todo?
 
+# hacer commit temporal sin afectar la rama
+git stash # luego cambiar de rama
 
-"ESTA ES LA RAMA LOGIN"
+# listar stash
+git stash list
+
+# volver a la rama origen y recuperar estado de la rama
+git stash pop
+
+# eliminar un stash si es necesario
+git stash drop
+
+# verificar conflictos entre ramas
+git diff <rama>
