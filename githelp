@@ -75,3 +75,7 @@ git tag
 # trabajo con ramas 'branch'
 # crear ramas
 git branch <nombre>
+
+# cambiar de rama
+git switch <nombre> # local?
+git checkout <nombre> # remoto?
