@@ -45,5 +45,10 @@ Enter file in which to save the key (/home/alchise/.ssh/id_ed25519): id_rsa
 # probar que podemos conectarnos a github
     
     $ ssh -T git@github.com
-    # Attempts to ssh to GitHub
 
+# Attempts to ssh to GitHub
+
+
+git remote add origin https://github.com/alchise/githelp.git
+git branch -M main
+git push -u origin main
