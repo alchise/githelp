@@ -25,7 +25,7 @@ git init
 git config --global init.defaultBranch main
 
 # cambiar el nombre de la rama master inicial a main
-git branch -m main
+git branch -M main
 
 EMPEZAR CON GIT:
 

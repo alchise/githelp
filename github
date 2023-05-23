@@ -33,22 +33,37 @@ Enter file in which to save the key (/home/alchise/.ssh/id_ed25519): id_rsa
 # agregar las siguientes lineas a config    
 
     Host *.github.com
-        AddKeysToAgent yes
-         .IdentityFile ~/.ssh/id_rsa
+    AddKeysToAgent yes
+    IdentityFile ~/.ssh/id_rsa
 
 # Agregar tu clave SSH al ssh-agent
 
     ssh-add ~/.ssh/id_rsa
 
-# agregar tu clave publica en glthub ****
+# agregar tu clave publica en github >>>>
 
 # probar que podemos conectarnos a github
     
     $ ssh -T git@github.com
 
-# Attempts to ssh to GitHub
+# Comenzar con GitHub, subir proyecto a repositorio remoto
 
+    git init
+    git add .
+    git commit -m "Primer commit"
+    git remote add origin https://github.com/alchise/githelp.git
+    git branch -M main
+    git push -u origin main
 
-git remote add origin https://github.com/alchise/githelp.git
-git branch -M main
-git push -u origin main
+# Sincronizar local y remoto, bajar cambios hechos en remoto
+
+# descarga historial sin los cambios
+    git fetch origin main
+
+# descarga historial con los cambios
+  
+    git pull origin main   
+    
+# confirmar merge por defecto
+
+    git config pull.rebase false 
