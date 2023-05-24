@@ -102,4 +102,4 @@ gif branch -d <rama>
 gif branch -D <rama>
 
 # eliminar rama en remoto
-git push origin : <rama>
+git push origin :<rama>
