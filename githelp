@@ -100,3 +100,6 @@ gif branch -d <rama>
 
 # forzar eliminacion de una rama
 gif branch -D <rama>
+
+# eliminar rama en remoto
+git push origin : <rama>
