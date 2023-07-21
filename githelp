@@ -49,7 +49,7 @@ git config --global alias.logtree "log --graph --decorate --all --oneline"
 
 # creamos un archivo para ignorar otros archivos en los commits
 touch .gitignore
-q
+
 # dentro del archivo
 **/<archivo>
 
@@ -96,7 +96,7 @@ git stash drop
 git diff <rama>
 
 # eliminar una rama que ya se ha ido a produccion
-gif branch -d <rama>
+git branch -d <rama>
 
 # forzar eliminacion de una rama
 gif branch -D <rama>
