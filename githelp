@@ -38,6 +38,9 @@ git add .
 # realizar un commit
 git commit -m "primer commit"
 
+# subir a remoto
+git push
+
 # verificar los commits
 git log
 git log --graph
