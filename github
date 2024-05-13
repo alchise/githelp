@@ -29,6 +29,7 @@ Enter file in which to save the key (/home/alchise/.ssh/id_ed25519): id_rsa
 
     cat ~/.ssh/config
     touch ~/.ssh/config
+    nano ~/.ssh/config
 
 # agregar las siguientes lineas a config    
 
